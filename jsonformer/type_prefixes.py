@@ -21,7 +21,7 @@ def is_object_prefix(s: str) -> bool:
     return re.match(r'^\{"?$', s)
 
 def get_prefix_tokens_for_types(tokenizer: PreTrainedTokenizer) -> Dict[str, List[str]]:
-    vocab = tokenizer.vocab.items()
+    vocab = tokenizer.get_vocab().items()
     return {
         "number": [v for k, v in vocab if is_number_prefix(k)],
         "boolean": [v for k, v in vocab if is_boolean_prefix(k)],
