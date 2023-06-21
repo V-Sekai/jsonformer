@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/V-Sekai/jsonformer.git
+	branch = next
+	commit = 98d9f04bad60b445624020a3ab00702e0366381d
+	parent = 3733adfc973c9dd56a05fc6ca573c829c60772a7
+	method = merge
+	cmdver = 0.4.6
